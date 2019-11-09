@@ -1,0 +1,23 @@
+package course;
+
+import java.util.Scanner;
+
+public class WhileFor {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+			int n = sc.nextInt();
+			int h = 0;
+			
+			for (int i = 1; i <= n && i <=0; i++) {
+				
+				if(h <= 0) {
+					System.out.println("N must be positive! Try again: ");
+					h = sc.nextInt();
+				}
+				
+			}
+
+	}
+
+}

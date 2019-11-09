@@ -1,0 +1,31 @@
+package vetores;
+
+import java.util.Scanner;
+
+/*
+ * Elaborar um programa que leia 10 números. Após liste apenas os números pares.
+ * Informe também, quantos pares foram digitados.
+ * */
+
+public class Vetores2 {
+
+	public static void main(String[] args) {
+		int num[] = new int[10];
+		
+		Scanner input = new Scanner(System.in);
+		for (int i = 1; i <=10 ; i++) {
+			System.out.println("Digite o "+i+"º número: ");
+			num[i] = input.nextInt();
+			
+		}
+		for (int i = 1; i <= 10; i++) {
+			if(num[i] %2 == 0) {
+				System.out.println("Apenas os números pares " + num[i]+ " ");
+
+			}
+
+		}
+
+	}
+
+}

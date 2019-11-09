@@ -1,0 +1,42 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Emplyoee;
+
+public class Program {
+
+	public static void main(String[] args) {
+		int id;
+		String name;
+		double salary;
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		List<String> list = new ArrayList<>();
+		
+		System.out.println("How many emplyoees will be registred: ");
+		int num = sc.nextInt();
+		for (int i = 1; i <=num; i++) {
+			System.out.println("Emplyoee #" + num);
+			System.out.print("ID: ");
+			id = sc.nextInt();
+			System.out.print("Name: ");
+			name = sc.nextLine();
+			System.out.print("Salary: ");
+			salary = sc.nextDouble();
+		}	
+		
+		
+		
+		
+		
+		sc.close();
+
+	}
+
+}
